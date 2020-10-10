@@ -1,0 +1,36 @@
+<h1>Listado de Imágenes</h1>
+<hr>
+
+<div class="card-columns">
+    <div *ngFor="let imagen of imagenes" class="card">
+        <img [src]="imagen.webformatURL" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"><span class="badge badge-primary">{{ imagen.tags }}</span></h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <button type="button" class="btn btn-success"> Likes - {{ imagen.likes }}</button>
+            <span class="badge badge-warning ml-5">Views: {{ imagen.views }}</span>
+        </div>
+    </div>
+</div>
+
+<!--
+<div class="alert alert-info text-center mt-3">
+    <h4 class="alert-heading">Cargando</h4>
+    <p>
+        <i class="fa fa-sync-alt fa-spin fa-2x"></i>
+    </p>
+
+    <p class="mb-0">
+        Espere por favor
+    </p>
+</div>
+
+
+<div class="alert alert-warning text-center mt-3">
+    <h4 class="alert-heading">No hay registros</h4>
+    <p>
+        <i class="fa fa-exclamation fa-2x"></i>
+    </p>
+</div>
+
+-->
